@@ -59,9 +59,13 @@
                   <a class="navbar-brand" href="/" title="Home" class="title">{{ SITENAME }}</a>
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="theNavbar">
-		    <ul class="nav navbar-nav navbar-left">
-                            <li><a href="/recipes" title="recipes">recipes</a></li>
-                            <li><a href="/music" title="music">music</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                        {% if ABOUT_PAGE %}
+                            <li><a href="{{ ABOUT_PAGE }}" title="About">About</a></li>
+                        {% endif %}
+                        {% if SHOW_ARCHIVES %}
+                            <li><a href="/archives.html" title="Archive">Archive</a></li>
+                        {% endif %}
                     </ul>
                 </nav>
             </div>

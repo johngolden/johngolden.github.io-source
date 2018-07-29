@@ -4,4 +4,4 @@ comments: false
 slugs: 
 tags: ipynb, tag2
 
-{% notebook downloads/notebooks/sample-ipynb.ipynb cells[2:] %}
+{% notebook downloads/notebooks/sample-ipynb.ipynb %}
